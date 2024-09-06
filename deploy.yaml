@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-todo
+  labels:
+    app: python-todo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: python-todo
+  template:
+    metadata:
+      labels:
+        app: python-todo
+    spec:
+      containers:
+      - name: python-todo
+        image: imbivek01/cicd-e2e:14
+        ports:
+        - containerPort: 8000
