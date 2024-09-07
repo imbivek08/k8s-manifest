@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: python-todo
-        image: imbivek01/cicd-e2e:14
+        image: imbivek01/cicd-e2e:21
         ports:
         - containerPort: 8000
