@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: DOCKERHUB_USERNAME/postpluse-backend:latest
+          image: imbivek01/postpluse-backend:v5
           ports:
             - containerPort: 3000
           env:

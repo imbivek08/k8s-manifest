@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: DOCKERHUB_USERNAME/postpluse-client:latest
+          image: imbivek01/postpluse-client:v5
           ports:
             - containerPort: 80
           env:
